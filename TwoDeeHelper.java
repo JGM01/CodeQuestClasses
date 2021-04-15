@@ -1,3 +1,6 @@
+/**
+ *  Class containing methods to help with 2D arrays
+ */
 public class TwoDeeHelper {
     private TwoDeeHelper() {
     }
