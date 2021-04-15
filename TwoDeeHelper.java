@@ -10,7 +10,7 @@ public class TwoDeeHelper {
      * @param flag the thing that you are looking to detect
      * @param boardSizeX the size of the board in the X direction. This prevents IndexOutOfBounds exceptions.
      * @param boardSizeY the size of the board in the Y direction. This prevents IndexOutOfBounds exceptions.
-     * @return
+     * @return the number of adjacent flag cells.
      */
     public static int adjacent(int[][] board, int x, int y, int flag, int boardSizeX, int boardSizeY) {
         int numAdj = 0;
