@@ -28,15 +28,5 @@ public class TwoDeeHelper {
         return numAdj;
     }
 
-
-/**
- * 
- * @param peepee BRRUUUUHHHHH LMAO
- * @param cheese DAAAAMNNNN SHAWTY
- * @return
- */
-public static long nathan(long peepee, String cheese){
-    return 2;
-}
-
+    
 }
