@@ -3,13 +3,16 @@ public class TwoDeeHelper {
     }
 
     /**
-     *  Helper method that will return how many adjacent things are to a location
-     * @param board the board being tested
-     * @param x the x location being tested
-     * @param y the y location being testd
-     * @param flag the thing that you are looking to detect
-     * @param boardSizeX the size of the board in the X direction. This prevents IndexOutOfBounds exceptions.
-     * @param boardSizeY the size of the board in the Y direction. This prevents IndexOutOfBounds exceptions.
+     * Helper method that will return how many adjacent things are to a location
+     * 
+     * @param board      the board being tested
+     * @param x          the x location being tested
+     * @param y          the y location being testd
+     * @param flag       the thing that you are looking to detect
+     * @param boardSizeX the size of the board in the X direction. This prevents
+     *                   IndexOutOfBounds exceptions.
+     * @param boardSizeY the size of the board in the Y direction. This prevents
+     *                   IndexOutOfBounds exceptions.
      * @return the number of adjacent flag cells.
      */
     public static int adjacent(int[][] board, int x, int y, int flag, int boardSizeX, int boardSizeY) {
@@ -25,4 +28,14 @@ public class TwoDeeHelper {
         }
         return numAdj;
     }
+/**
+ * 
+ * @param peepee BRRUUUUHHHHH LMAO
+ * @param cheese DAAAAMNNNN SHAWTY
+ * @return
+ */
+public static long nathan(long peepee, String cheese){
+    return 2;
+}
+
 }
