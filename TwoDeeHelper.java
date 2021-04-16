@@ -6,6 +6,24 @@ public class TwoDeeHelper {
     }
 
     /**
+     * Creates a new 2D array from a {@link java.util.Scanner Scanner} of size X by Y.
+     * @param sc the {@link java.util.Scanner Scanner} that will input the array
+     * @param boardSizeX length of board in X direction
+     * @param boardSizeY length of board in Y direction
+     * @return a new 2D array 
+     */
+    public static char[][] readBoard(Scanner sc, int boardSizeX, int boardSizeY) {
+        char[][] board = new char[boardSizeX][boardSizeY];
+        for (int y = 0; y < boardSizeY; y++) {
+            String line = sc.nextLine();
+            for (int x = 0; x < boardSizeX; x++) {
+                board[x][y] = line.charAt(x);
+            }
+        }
+        return board;
+    }
+
+    /**
      * Helper method that will return how many adjacent things are to a location
      * 
      * @param board      the board being tested
@@ -30,8 +48,8 @@ public class TwoDeeHelper {
 
     /**
      * 
-     * Will return how many adjacent things are to a location but
-     * it will <b>not</b> count the cardinal directions.
+     * Will return how many adjacent things are to a location but it will <b>not</b>
+     * count the cardinal directions.
      * 
      * @param board      the board being tested
      * @param x          the x location being tested
