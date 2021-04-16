@@ -36,7 +36,7 @@ public class TwoDeeHelper {
      *                   IndexOutOfBounds exceptions.
      * @return the number of adjacent flag cells.
      */
-    public static int adjacent(int[][] board, int x, int y, int flag, int boardSizeX, int boardSizeY) {
+    public static int adjacent(char[][] board, int x, int y, int flag, int boardSizeX, int boardSizeY) {
         int numAdj = 0;
         for (int y2 = y - 1; y2 < y + 2; y2++)
             for (int x2 = x - 1; x2 < x + 2; x2++)
@@ -61,7 +61,7 @@ public class TwoDeeHelper {
      *                   IndexOutOfBounds exceptions.
      * @return the number of adjacent flag cells.
      */
-    public static int adjacentCorners(int[][] board, int x, int y, int flag, int boardSizeX, int boardSizeY) {
+    public static int adjacentCorners(char[][] board, int x, int y, int flag, int boardSizeX, int boardSizeY) {
         int numAdj = 0;
         for (int y2 = y - 1; y2 < y + 2; y2 += 2)
             for (int x2 = x - 1; x2 < x + 2; x2 += 2)
@@ -73,7 +73,7 @@ public class TwoDeeHelper {
     }
 
     /*
-     * TODO: actually impliment this public static int adjacentCardinal(int[][]
+     * TODO: actually impliment this public static int adjacentCardinal(char[][]
      * board, int x, int y, int flag, int boardSizeX, int boardSizeY) { int numAdj =
      * 0; for (int y2 = y - 1; y2 < y + 2; y2++) for (int x2 = x; x2 < x + 2; x2 %=
      * 2) if (x2 > -1 && x2 < boardSizeX && y2 > -1 && y2 < boardSizeY && !(x2 == x
