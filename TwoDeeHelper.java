@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Class containing methods to help with 2D arrays
  */
@@ -6,11 +8,14 @@ public class TwoDeeHelper {
     }
 
     /**
-     * Creates a new 2D array from a {@link java.util.Scanner Scanner} of size X by Y.
-     * @param sc the {@link java.util.Scanner Scanner} that will input the array
+     * Creates a new 2D array from a {@link java.util.Scanner Scanner} of size X by
+     * Y.
+     * 
+     * @param sc         the {@link java.util.Scanner Scanner} that will input the
+     *                   array
      * @param boardSizeX length of board in X direction
      * @param boardSizeY length of board in Y direction
-     * @return a new 2D array 
+     * @return a new 2D array
      */
     public static char[][] readBoard(Scanner sc, int boardSizeX, int boardSizeY) {
         char[][] board = new char[boardSizeX][boardSizeY];
@@ -25,9 +30,11 @@ public class TwoDeeHelper {
 
     /**
      * Prints a 2D array to the console.
+     * 
      * @param board the 2D array to print
      */
     public static void printBoard(char[][] board) {
+        System.out.println();
         for (int y = 0; y < board.length; y++) {
             for (int x = 0; x < board[y].length; x++) {
                 System.out.print(board[x][y]);
