@@ -24,6 +24,19 @@ public class TwoDeeHelper {
     }
 
     /**
+     * Prints a 2D array to the console.
+     * @param board the 2D array to print
+     */
+    public static void printBoard(char[][] board) {
+        for (int y = 0; y < board.length; y++) {
+            for (int x = 0; x < board[y].length; x++) {
+                System.out.print(board[x][y]);
+            }
+            System.out.println();
+        }
+    }
+
+    /**
      * Helper method that will return how many adjacent things are to a location
      * 
      * @param board      the board being tested
