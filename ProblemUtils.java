@@ -33,11 +33,14 @@ public class ProblemUtils {
         b ^= a;
         a ^= b;
     }
-
+    /**
+     * 
+     * @param N number
+     * @return number of digits
+     */
     public static double numDigits(double N){
         return Math.floor(Math.log10(N)) + 1;
     }
-
 
     /**
      * Maps one value from one range to another
@@ -52,4 +55,6 @@ public class ProblemUtils {
     public static long map(long x, long in_min, long in_max, long out_min, long out_max) {
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
+
+
 }
