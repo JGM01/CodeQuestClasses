@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.lang.Runnable;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Methods helpful to problems
@@ -56,5 +57,19 @@ public class ProblemUtils {
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
 
+
+    /**
+     * Calculates time based on seconds, can have weeks/months added if desired
+     * @param seconds
+     */
+    public static void calculateTime(long seconds) {
+        int day = (int)TimeUnit.SECONDS.toDays(seconds);        
+        long hours = TimeUnit.SECONDS.toHours(seconds) - (day *24);
+        long minute = TimeUnit.SECONDS.toMinutes(seconds) - (TimeUnit.SECONDS.toHours(seconds)* 60);
+        long second = TimeUnit.SECONDS.toSeconds(seconds) - (TimeUnit.SECONDS.toMinutes(seconds) *60);
+
+        System.out.println("Day " + day + " Hour " + hours + " Minute " + minute + " Seconds " + second);
+
+    }
 
 }
