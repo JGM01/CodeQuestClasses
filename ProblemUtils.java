@@ -20,4 +20,19 @@ public class ProblemUtils {
             logic.run();
         }
     }
+    /**
+     * Swaps 2 integers
+     * @param a first integer
+     * @param b second integer
+     */
+    public static void swap(int a, int b){
+        a ^= b;
+        b ^= a;
+        a ^= b;
+    }
+
+    public static double numDigits(double N){
+        return Math.floor(Math.log10(N)) + 1;
+    }
+
 }
