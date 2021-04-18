@@ -81,4 +81,13 @@ public class ProblemUtils {
         return str.equals(new StringBuilder(str).reverse().toString()) ? true : false;
     }
 
+    /**
+     * Checks to see if the number is even.
+     * @param n number being checked
+     * @return true if even, false if odd
+     */
+    public static boolean isEven(long n) {
+        return n % 2 == 0;
+    }
+
 }
