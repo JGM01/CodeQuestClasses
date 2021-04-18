@@ -72,4 +72,13 @@ public class ProblemUtils {
 
     }
 
+    /**
+     * Returns if a given string is a palindrome or not.
+     * @param str 
+     * @return true if palindrome, false if not.
+     */
+    public static boolean isPalindrome(String str){
+        return str.equals(new StringBuilder(str).reverse().toString()) ? true : false;
+    }
+
 }
